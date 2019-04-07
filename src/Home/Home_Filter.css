@@ -1,0 +1,66 @@
+
+.mask_card_filter{
+    height: 100px;
+}
+.card_filter_wrapper{
+    display: flex;
+    background: url(/assets/blueMetal.jpg) center  center;
+    background-size:1278px;
+    padding: 20px;
+    display: flex;
+    color:white;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 0 0 5px 5px;
+}
+.card_filter{
+    width: 1280px;
+    margin: 0 auto;
+}
+.card_filter_search{
+    width:100%;
+    height:350px;
+    margin:0px auto;
+    background:rgb(255,255,255,.7);
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.card_filter_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_filter_input{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: 1s;
+    z-index: 10;
+    font-family: cursive;
+    color: dodgerblue;
+    text-shadow: 1px 1px 2px black, 0 0 1px blue, 0 0 0.2px blue;
+}
+.card_filter_input:focus{
+    box-shadow: 0px 0px 33px 13px rgba(56,150,222,1);
+}
+.card_filter_button{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: url(/assets/blueMetal.jpg) center center;
+    height: 50px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 10;
+}

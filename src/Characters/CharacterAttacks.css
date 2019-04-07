@@ -1,0 +1,42 @@
+.character_details_attacks_wrapper{
+    width:100%;
+    height:15px; 
+    color:black;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    position:relative;
+    font-size:25px;
+    font-family:cursive;
+    font-weight:bold;
+}
+.character_details_attacks{
+    background:white;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    padding:30px;
+    width:500px;
+    border-radius:125px;
+}
+.character_details_attack_table{
+    margin: 0 auto;
+    width: 1400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.character_details_attack_table table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+}
+.character_details_attack_table td{
+    width: 25%;
+    padding: 10px;
+    background: white;
+    color: black;
+    padding: 15px;
+}

@@ -1,0 +1,87 @@
+.gacha_main_div {
+  background: url(/assets/gachaBackground3.jpg)center center fixed no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  padding-bottom: 100px;
+  position: relative;
+}
+.gacha_grid_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1280px;
+  margin: 50px auto;
+  grid-gap: 50px;
+}
+.gacha_title {
+  width: 380px;
+  height: 100px;
+  color: white;
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Black Ops One", cursive;
+  font-size: 35px;
+  background: url(/assets/blueMetal.jpg);
+  border-radius: 50%;
+  padding: 20px;
+  border-bottom: 3px solid dodgerblue;
+  box-shadow: 10px 10px 33px 0px rgba(0, 126, 184, 1);
+}
+.gacha_card {
+  height: 280px;
+  background: white;
+  color: black;
+  position: relative;
+  border-radius: 5px;
+  
+}
+.gacha_card_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 50%;
+}
+.gacha_card_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url(/assets/blueMetal.jpg);
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}
+.gacha_card_modal {
+  width: 40%;
+  height: 40px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  background: white;
+  color: navy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid navy;
+  transition: 0.5s;
+}
+.gacha_card_modal:hover {
+  background: url(/assets/blueMetal.jpg);
+  color: white;
+}
+.gacha_button_modal {
+  position: absolute !important;
+  bottom: 20px !important;
+  left: 50% !important;
+  transform: translate(-50%) !important;
+}

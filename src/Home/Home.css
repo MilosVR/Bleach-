@@ -1,0 +1,192 @@
+.card_main_div {
+  background: url(/assets/net.jpg) center center fixed;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.card_header_top {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.mask_card_header {
+  height: 100px;
+}
+.card_filter_wrapper_header {
+  height: 300px;
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.card_promotion_wrapper {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card_header {
+  width: 100%;
+  height: 200px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_header_title {
+  width: 100%;
+  font-size: 50px;
+  color: steelblue;
+}
+.card_wrapper {
+  width: 1280px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: lightgray;
+}
+.card .card_Background {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card_image_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/likeARainbow1.gif);
+  color: black;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.card_image_back_zoom {
+  width: 0px;
+  height: 60px;
+  background: dodgerBlue;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  border-radius: 50px 0px 0px 50px;
+  transition: 1s;
+}
+.card_image_back_favorite {
+  width: 0px;
+  height: 60px;
+  background: mediumpurple;
+  position: absolute;
+  left: 0;
+  top: 65px;
+  border-radius: 0px 50px 50px 0px;
+  transition: 1s;
+}
+.card_image_back:hover .card_image_back_zoom {
+  width: 50px;
+}
+.card_image_back:hover .card_image_back_favorite {
+  width: 50px;
+}
+.card:hover .card_image_back {
+  display: flex;
+}
+.card:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 7px 7px 7px 0px dodgerblue;
+}
+
+.nameAndAtr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  background: url(/assets/name.jpg) center center !important;
+}
+.char_name_wrapper {
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.char_name_span {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 85%;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0px;
+  background: rgba(0, 0, 0, 0.55);
+}
+.table_stats {
+  width: 180px;
+}
+.table_stats tbody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.charStats td {
+  width: 130px;
+  text-align: left;
+  background: white;
+  border-radius: 3px;
+}
+.charStats img {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+.charStats_value td {
+  width: 50px;
+  border-radius: 3px;
+  height: 32px;
+  background: white;
+  font-weight: bold;
+}
+.charStats_button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: whitesmoke; */
+}
+.charStats_button {
+  width: 70px;
+  height: 150px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+}

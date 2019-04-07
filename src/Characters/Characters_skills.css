@@ -1,0 +1,40 @@
+.character_details_skills_wrapper{
+    margin-top:100px;
+    width:100%;
+    height:15px; 
+    color:black;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    font-size:25px;
+    font-family:cursive;
+    font-weight:bold;
+}
+.character_details_skills{
+    background:white;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    padding:30px;
+    width:500px;
+    border-radius:125px;
+}
+.character_skils_wrapper{
+    width: 1280px;
+    height: 600px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.character_skils_wrapper table{
+    width: 70%;
+    /* border-collapse: collapse; */
+}
+.character_skils_wrapper td{
+    width: 50%;
+    height: 50px;
+    border: 2px solid white;
+}

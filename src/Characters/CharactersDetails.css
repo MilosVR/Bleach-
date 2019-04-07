@@ -1,0 +1,196 @@
+.characters_details-main_div{
+    width: 100%;
+    background:url(/assets/hexagon1.jpg) center center fixed; 
+    color:white;
+    overflow: scroll;
+}
+.characters_details_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.characters_details_mask{
+    height:100px;
+    width:100%;
+}
+.characters_details{
+    width:800px;
+    height:500px;
+    position:relative;
+    margin:0 auto;
+    overflow: hidden;
+}
+.characters_details img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-radius: 5px;
+}
+.characters_details_ultra_rare {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 3;
+}
+.characters_details_ultra_rare img{
+    transform: rotate(-5deg);
+}
+.characters_details_title{
+    font-size: 35px;
+    margin: 50px auto;
+    padding-top: 50px;
+    text-shadow: 2px 2px 4px dodgerBlue;
+    width: 800px;
+    height: 200px;
+    height: 100px;
+    text-align: center;
+    font-family: Black Ops One, cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.container{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.5fr;
+    font-family: cursive;
+}
+.container h2 {
+    font-family:cursive;
+}
+.container .hex{
+    width: 100px;
+    height: 100px;
+    background: url(/assets/blueMetal.jpg);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    color: white !important;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-weight:bold;
+}
+.container1{
+    margin-top: -50px;
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+}
+.container1 .hex1{
+    width: 100px;
+    height: 100px;
+    background:url(/assets/blueMetal.jpg);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-weight:bold;
+    font-family: cursive;
+}
+.shadow {
+    filter: drop-shadow(10px 20px 20px dodgerBlue) !important;
+}
+.shadow1 {
+    filter: drop-shadow(10px 20px 20px Cyan) !important;
+}
+.characters_details_stats_main_div{
+    width:100%;
+    height:700px;
+    background:lightgray;
+    margin:0 auto;
+    margin-top:50px;
+    
+}
+.character_details_stats_wrapper{
+    margin-top:100px;
+    width:100%; 
+    height:15px; 
+    color:black;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    font-size:25px;
+    font-family:cursive;
+    font-weight:bold;
+}
+.character_details_stats{
+    background:white;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    padding:30px;
+    width:500px;
+    border-radius:125px;
+}
+.character_details_box_wrapper{
+    width:1400px;
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center;
+    margin:100px auto;
+    
+}
+.character_details_box{
+    width:400px;
+    height:400px;
+    color:white
+}
+.character_details_box_title{
+    border:2px solid white;
+    height:15%;
+    width:100%;
+    background: white;
+    color: white;
+    background: url(/assets/hexagon1.jpg) center center; 
+    box-shadow: 0px 8px 6px -6px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+.character_details_box_body{
+    margin:0 auto;
+    width:90%;
+    height:85%;
+    background: url(/assets/silverMetal.jpg) center center ;
+    box-shadow: 0px 8px 6px -6px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    /* border: 1px solid white; */
+}
+.character_details_box_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+.character_details_box_table table{
+    width: 300px;
+    height: 300px;
+}
+.character_details_box_table td{
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 10px;
+    background: white;
+}
