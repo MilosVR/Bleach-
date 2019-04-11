@@ -132,9 +132,9 @@ class CharactersDetails extends Component {
 const mapStateToProps = (state, ownProps) => {
 
     let id = ownProps.match.params.id
-    
+        
     return {
-        stats : state.stats.find(item => item.id == id)
+        stats : state.stats.find(item => item.id.toString() === id)
     }
 }
 

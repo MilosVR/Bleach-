@@ -84,6 +84,17 @@ class Home extends Component {
     query:''
   }
 
+  // onLoadHandler = id => {
+  //   if (id === 2) {
+  //     console.log(document.querySelector('.char_name_span'));
+  //     return document.querySelector('.char_name_span').style.color = 'blue'
+  //   }
+  // }
+  // componentDidMount(){
+  //   this.onLoadHandler()
+  // }
+ 
+
   onChangeSelect = (e, data) => {
     if (data.value === "Descending") {
       this.setState({
@@ -198,24 +209,22 @@ class Home extends Component {
   }
 
   render() {
-    console.log('state stats',  this.state.stats);
-    
     return (
       <div>
         <NavbarHome />
       <div className="card_main_div">
 
       <div className='card_header_top' >
+      
       <div className='mask_card_header'></div>
 
-      <div style={{width:"99.8%", height:"410px", overflow:"hidden", border:'1px solid white'}}>
-        <img alt='' src='/assets/homeBackground3.jpg' style={{width:"100%",height:"100%", }}/>
+      <div className='main_home_background'>
+        
       </div>
 
       <div className='card_promotion_wrapper'>
-         <img src='/assets/animePromoton.jpg' style={{width:"500px", height:"200px", }} alt=''/>
-
-         <div style={{width:"15%", height:"70%", position:"relative"}}>
+         <div className='card_promotion_image_1' alt=''></div>
+         <div style={{width:"15%", height:"70%", position:"relative", display:"flex"}} className='konLogo'>
            <img alt='' src='/assets/kon.png' style={{position:'absolute', top:'0',left:'0', width:"100%",height:"100%"}}/>
           <div>
             <span style={{position:'absolute', left:"-8px", top:"-10px",zIndex:'2',color:'black',fontSize:'18px', fontWeight:'bold'}}>Scroll<br/> down</span>
@@ -223,9 +232,7 @@ class Home extends Component {
                  style={{width:"60%", height:"60%", position:'absolute', top:'-50px', left:"-60px"}}/> 
             </div> 
           </div>
-
-        <img src='/assets/mayPromotion.jpg' style={{width:"600px", height:"200px", }} alt=''/>   
-           
+        <div className='card_promotion_image_2'></div>   
       </div>
 
       </div>  
@@ -248,7 +255,7 @@ class Home extends Component {
                 return (
                   <div className='card' key={item.id}>
                     <img className='card_Background' src={`${item.charImg}`} alt=''/>
-                    <div className='char_name_wrapper'>
+                    <div className='char_name_wrapper' >
                       <span className='char_name_span'>
                         <img alt='' src={`/assets/${item.atribute}.png`}/>
                         <span

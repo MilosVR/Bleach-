@@ -11,16 +11,20 @@ class Home_Filter extends Component {
     return (
         <div className='card_filter'>
 
-            <div className='mask_card_filter'></div>
+            <div className='card_filter_search' style={{overflow:"hidden"}}>
 
-            <div className='card_filter_search'>
+            <div className='search_filter_wrapper'></div>
 
-            <div style={{width:"400px", height:"400px", position:'relative'}}>
+            <div className='card_filter_search_image_1'>
             <img src='/assets/NyIchigo.png' alt='' style={{position:'absolute', width:'500px', height:'500px', left:"0", top:"-150px"}}/>
             </div>
 
-            <div style={{marginTop:"50px",color:'steelBlue'}}>
-             <div style={{margin:"50px"}}><span style={{fontFamily:"Black Ops One, cursive",fontSize:'44px'}}>Characters</span></div>
+            <div className='search_form_wrapper' >
+
+             <div style={{margin:"20px"}}>
+             <p style={{fontFamily:"Black Ops One, cursive",fontSize:'44px',zIndex:"100"}}>Characters</p>
+             </div>
+
             <form className='card_filter_form' autoComplete='false' >
               <input
               name='characters'
@@ -30,17 +34,18 @@ class Home_Filter extends Component {
               className='card_filter_input'/>
               <button className='card_filter_button'>Search</button>
             </form>
-            <div style={{margin:"40px"}}>
-            <span style={{margin:"25px"}}>Available on :</span>
-            <div style={{width:'300px', display:"flex", justifyContent:"space-around",margin:'0 auto'}}>
-            <img alt='' src='/assets/bleachGoogle.png' style={{width:"120px", height:"40px"}}/>
-            <img alt='' src='/assets/bleachIos.png' style={{width:'120px', height:"40px"}}/>
-            </div>
+
+            <div style={{margin:'20px'}}>
+              <div className='search_filter_description'>Available on :</div>
+              <div style={{width:'300px', display:"flex", justifyContent:"space-around",margin:'0 auto',}}>
+              <img alt='' src='/assets/bleachGoogle.png' style={{width:"120px", height:"40px",zIndex:"10"}}/>
+              <img alt='' src='/assets/bleachIos.png' style={{width:'120px', height:"40px", zIndex:"10"}}/>
+              </div>
             </div>
 
             </div>
 
-            <div style={{width:"400px", height:"400px", position:'relative'}}>
+            <div className='card_filter_search_image_2'>
             <img src='/assets/aizen3rdFusion.png' alt='' style={{position:'absolute', width:'500px', height:'500px', right:"0", top:"-150px"}}/>
             </div>
 
@@ -50,7 +55,7 @@ class Home_Filter extends Component {
             <div className='card_filter_wrapper'>
             <span>Filter by</span>
 
-            <div style={{marginLeft:'5px'}}> 
+            <div  className='first_card_filter'> 
             <Select  placeholder='Rarity' style={{width:'250px', fontSize:'16px'}} 
             onChange={this.props.onChangeSelect}
             fluid
@@ -59,7 +64,7 @@ class Home_Filter extends Component {
             />
             </div>
 
-            <div style={{marginLeft:'15px'}}>
+            <div  className='second_card_filter'>
             <Select  placeholder='Attack/Sp' style={{width:'250px', fontSize:'16px'}} 
             onChange={this.props.onChangeSelect}
             fluid
@@ -68,7 +73,7 @@ class Home_Filter extends Component {
             />  
             </div>
 
-            <div style={{marginLeft:'15px'}}>
+            <div  className='third_card_filter'>
             <Select  placeholder='Atribute' style={{width:'250px', fontSize:'16px'}} 
             onChange={this.props.onChangeSelect}
             fluid
@@ -77,23 +82,13 @@ class Home_Filter extends Component {
             />  
             </div>
 
-            <div>
-            <Link to='/favorite' style={{
-              background:"dodgerBlue", 
-              color:'white',
-              width:"120px",
-              height:"45px",
-              cursor:"pointer",
-              display:'flex',
-              justifyContent:'center',
-              alignItems:'center',
-              borderRadius:'5px',
-              fontSize:"16px",
-              color:"white",
-              fontWeight:'bold',
-              }}>Favorite ({this.props.favorite.length})
+            
+            <div  className='favorite_button' >
+              <Link to='/favorite' style={{color:"white",width:"250px"}}>  
+                Favorite ({this.props.favorite.length})
               </Link>  
-              </div>
+            </div>
+              
 
             </div>
 
