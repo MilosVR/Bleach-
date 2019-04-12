@@ -218,11 +218,74 @@ class Home extends Component {
       
       <div className='mask_card_header'></div>
 
-      <div className='main_home_background'>
-        
+      <div className='main_home_background'></div>
+
+      <div className='header_bar_description'>
+      <div className='header_bar_description_inner'>
+        <div className='header_bar_description_inner_div1'>
+          <img src='/assets/wordwide.png' alt=''/>
+            <div>
+            <h3 style={{color:"white", width:'100px'}}>Campaign:</h3>
+            <p style={{fontSize:'16px', color:'dodgerblue'}}>
+            39 Million Worldwide Downloads Celebration on now!<br/> 
+            Loads of promotional content awaits you, including the opportunity to earn up to 50 Spirit Orbs!
+            </p> 
+            </div>
+        </div>
+      <div className='header_bar_description_inner_div2'>
+
+      <div className='social_icons'>
+
+      <div style={{margin:'10px'}}>Follow us on :</div>
+
+      <div style={{display:"flex", }}>
+      <div className='social_icon_image'>
+      <img src='/assets/facebook1.png' /> 
+      </div>
+      
+      <div className='social_icon_image'>
+      <img src='/assets/youtube1.png' /> 
       </div>
 
-      <div className='card_promotion_wrapper'>
+      <div className='social_icon_image'>
+      <img src='/assets/twiter1.png' /> 
+      </div>
+
+      <div className='social_icon_image'>
+      <img src='/assets/google.png' style={{width:'40px',height:'40px'}}/> 
+      </div>
+      </div>
+      
+      </div>
+
+      </div>
+      </div>
+      </div>
+
+      <div className='header_bottom_description'>
+
+      <div className='header_bottom_description_inner'>
+      <img src='/assets/CFOW.png' alt=''/>
+      </div>
+
+      <div className='header_bottom_description_news'>
+      <h3>News</h3>
+      <p>
+        Join the KGS crew in some live Co-Op on the KLabGames booth stage at Middle East Film and Comic Con now! @MEFCC
+        You can also catch a livestream of the event here! 
+        <br/><a href='https://youtu.be/QnstL2q3mvU'>Link</a>
+      </p>
+      </div>
+      <div className='header_bottom_description_recent'>
+      <h3>Recent</h3>
+      <p>
+      Bleach: Brave Souls is at the Middle East Film & Comic Con this week! Celebrate with a special login bonus and more! 
+      <a href='http://hyperurl.co/1j7cnj '> http://hyperurl.co/1j7cnj </a>
+      </p>
+      </div>
+      </div>
+
+      {/* <div className='card_promotion_wrapper'>
          <div className='card_promotion_image_1' alt=''></div>
          <div style={{width:"15%", height:"70%", position:"relative", display:"flex"}} className='konLogo'>
            <img alt='' src='/assets/kon.png' style={{position:'absolute', top:'0',left:'0', width:"100%",height:"100%"}}/>
@@ -233,7 +296,7 @@ class Home extends Component {
             </div> 
           </div>
         <div className='card_promotion_image_2'></div>   
-      </div>
+      </div> */}
 
       </div>  
 

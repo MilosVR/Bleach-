@@ -1,0 +1,121 @@
+.footer_main_div {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background: url(/assets/hexagon1.jpg);
+}
+.footer_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.footer_top_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+  height: 200px;
+}
+.footer_top_image_div {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.footer_top_image_div img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+.footer_links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  color: white;
+  list-style: none;
+}
+.footer_links li {
+  margin: 20px;
+  background: white;
+  color: black;
+  padding: 5px;
+  border-radius: 3px;
+}
+.footer_bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px auto;
+  align-items: center;
+  background: white;
+  height: 100px;
+  overflow: hidden;
+}
+.footer_bottom_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.footer_bottom_wrapper img {
+  width: 200px;
+  height: 200px;
+  margin-right: 50px;
+}
+.footer_bottom_wrapper p {
+  width: 600px;
+  color: black;
+}
+.footer_top_game_description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer_top_game_description p {
+  font-weight: bold;
+  text-align: left;
+}
+.footer_top_game_description span {
+  margin-left: 10px;
+  font-weight: normal;
+}
+@media only screen and (max-width: 800px) {
+  .footer_bottom_wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer_bottom {
+    height: auto;
+    box-sizing: border-box;
+  }
+  .footer_bottom_wrapper p {
+    width: auto;
+    padding: 20px;
+  }
+  .footer_bottom_wrapper img {
+    width: 150px;
+    object-fit: cover;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .footer_top_wrapper {
+    width: 250px;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .footer_top_image_div {
+    width: 80px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .footer_top_game_description p {
+    text-align: center;
+  }
+}

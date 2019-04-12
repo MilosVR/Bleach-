@@ -11,15 +11,15 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  background:black
 }
 .mask_card_header {
   height: 100px;
 }
 .main_home_background{
-  width:99.8%;
-  height:410px;
+  width:100%;
+  height:350px;
   overflow:hidden;
-  border:1px solid white;
   background: url(/assets/homeBackground3.jpg) center center;
   background-size: 100% 100%;
 }
@@ -31,9 +31,136 @@
   align-items: center;
   color: white;
 }
+.header_bar_description{
+  width:100%;
+  background: linear-gradient(to right, black ,dodgerblue);
+  height:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_bar_description_inner{
+  width: 1280px;
+  height: 140px;
+  padding: 5px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.header_bar_description_inner_div1{
+  width: 60%;
+  text-align:left;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.header_bar_description_inner_div1 img{
+  width:150px;
+  height:120px;
+  margin-right:10px;
+}
+.social_icons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+}
+.social_icon_image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-right:20px;
+  color:red;
+}
+.social_icon_image img{
+  width:50px;
+  height:50px;
+  opacity:0.8;
+  cursor:pointer;
+}
+.social_icon_image img:hover{
+  opacity:1;
+}
+.header_bar_description_inner_div2{
+  border-left:1px solid dodgerblue;
+  padding-left:50px
+}
+.header_bottom_description{
+  background: linear-gradient(to right, dodgerblue , black);
+  width:1280px;
+  margin:0 auto;
+  height:220px;
+  position:relative;
+  display:flex;
+  flex-wrap:wrap;
+  color:black;
+  justify-content:flex-end;
+  align-items:center
+}
+.header_bottom_description_news{
+  width:350px;
+  height:80%;
+  background:black;
+  margin:10px
+}
+.header_bottom_description_news h3{
+  text-align:center;
+  color:white;
+  height:50px;
+  line-height:50px;
+  border-bottom:1px solid white;
+  background:dodgerblue;
+}
+.header_bottom_description_news p{
+  text-align:center;
+  color:white;
+  padding-left:20px;
+  padding-right:20px;
+  text-align:justify
+}
+.header_bottom_description_recent{
+  width:350px;
+  height:80%;
+  background:black;
+  margin:10px
+}
+.header_bottom_description_recent h3{
+  text-align:center;
+  color:white;
+  height:50px;
+  line-height:50px;
+  border-bottom:1px solid white;
+  background:steelblue;
+}
+.header_bottom_description_recent p{
+  text-align:center;
+  color:white;
+  padding-left:20px;
+  padding-right:20px;
+  text-align:justify
+}
+.header_bottom_description_inner{
+  width:400px;
+  height:180px;
+  background:black;
+  position:absolute;
+  top:50%;
+  left:-50px;
+  transform:translate(0, -50%);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:5px solid white;
+}
+.header_bottom_description_inner img{
+  width:90%;
+  height:90%;
+}
 .card_promotion_wrapper {
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -53,7 +180,7 @@
 }
 .card_wrapper {
   width: 1280px;
-  margin: 100px auto;
+  margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
@@ -212,12 +339,20 @@
 }
 
 
-@media only screen and (max-width: 1440px) {
-  .konLogo  {
-    display: none !important;
-  }
+@media only screen and (max-width: 1280px) {
+  
 }
+
 @media only screen and (max-width: 1100px){
+  .header_bottom_description{
+    justify-content:center;
+    align-content:center;
+    height:220px;
+    width:auto;
+  }
+  .header_bottom_description_inner{
+  display:none
+  }
   .card_promotion_wrapper{
     display: grid !important;
     grid-template-columns: 1fr ;
@@ -234,11 +369,47 @@
     height:auto !important;
     padding-bottom: 100px
   }
+  .card_wrapper{
+    width: 960px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
 }
 @media only screen and (max-width: 900px){
   .main_home_background {
     background: url(/assets/bleachBackground.png) center center no-repeat;
     background-size: 100% 100%;
+  }
+  .card_wrapper{
+    width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-content: center;
+  }
+  .header_bottom_description{
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    height:auto;
+    width:auto;
+  }
+  .header_bottom_description_news{
+    width:auto;
+    height:200px;
+    margin-left:50px;
+    margin-right:50px;
+  }
+  .header_bottom_description_recent{
+    width:auto;
+    height:200px;
+    margin-left:50px;
+    margin-right:50px;
+  }
+  .header_bar_description_inner_div1 h3{
+    font-size:16px;
+  }
+  .header_bar_description_inner_div1 p{
+    font-size:12px !important;
   }
 }
 @media only screen and (max-width: 640px){
@@ -249,6 +420,17 @@
   .card_promotion_image_1{
     width:500px;
     height:200px;
+  }
+  .card_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 400px; 
+  }
+  .card{
+    margin:20px auto;
+    width: 80%;
+    justify-self: center;
   }
 }
 @media only screen and (max-width: 500px){
