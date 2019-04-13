@@ -21,7 +21,7 @@ class Home_Filter extends Component {
 
             <div className='search_form_wrapper' >
 
-             <div style={{margin:"20px"}}>
+             <div style={{margin:"20px"}} className='search_form_title'>
              <p style={{fontFamily:"Black Ops One, cursive",fontSize:'44px',zIndex:"100"}}>Characters</p>
              </div>
 
@@ -35,7 +35,7 @@ class Home_Filter extends Component {
               <button className='card_filter_button'>Search</button>
             </form>
 
-            <div style={{margin:'20px'}}>
+            <div style={{margin:'20px'}} className='search_filter_description_wrapper'>
               <div className='search_filter_description'>Available on :</div>
               <div style={{width:'300px', display:"flex", justifyContent:"space-around",margin:'0 auto',}}>
               <img alt='' src='/assets/bleachGoogle.png' style={{width:"120px", height:"40px",zIndex:"10"}}/>

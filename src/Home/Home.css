@@ -34,7 +34,7 @@
 .header_bar_description{
   width:100%;
   background: linear-gradient(to right, black ,dodgerblue);
-  height:150px;
+  height:200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -347,7 +347,6 @@
   .header_bottom_description{
     justify-content:center;
     align-content:center;
-    height:220px;
     width:auto;
   }
   .header_bottom_description_inner{
@@ -366,8 +365,7 @@
     display: none !important;
   }
   .card_header_top{
-    height:auto !important;
-    padding-bottom: 100px
+    height:auto ;
   }
   .card_wrapper{
     width: 960px;
@@ -396,20 +394,21 @@
   .header_bottom_description_news{
     width:auto;
     height:200px;
-    margin-left:50px;
-    margin-right:50px;
+    margin-left:100px;
+    margin-right:100px;
   }
   .header_bottom_description_recent{
     width:auto;
     height:200px;
-    margin-left:50px;
-    margin-right:50px;
+    margin-left:100px;
+    margin-right:100px;
   }
   .header_bar_description_inner_div1 h3{
     font-size:16px;
   }
   .header_bar_description_inner_div1 p{
     font-size:12px !important;
+    text-align: justify;
   }
 }
 @media only screen and (max-width: 640px){
@@ -432,6 +431,34 @@
     width: 80%;
     justify-self: center;
   }
+  .header_bottom_description_recent{
+    width:auto;
+    height:200px;
+    margin-left:50px;
+    margin-right:50px;
+  }
+  .header_bottom_description_news{
+    width:auto;
+    height:200px;
+    margin-left:50px;
+    margin-right:50px;
+  }
+  .header_bar_description_inner{
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .header_bar_description_inner_div2{
+    border: none;
+    padding: 0;
+  }
+  .header_bar_description_inner_div1{
+    width: 100%;
+    border-bottom: 1px solid dodgerblue;
+  }
+  .header_bar_description_inner_div2{
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 500px){
   .card_promotion_image_2{
@@ -447,21 +474,49 @@
   }
 }
 @media only screen and (max-width: 400px){
-  .card_promotion_image_2{
-    width:300px;
-    height:150px;
-  }
-  .card_promotion_image_1{
-    width:300px;
-    height:150px;
-  }
-  .card_header_top{
-    height: 1250px !important;
-  }
-  .card_promotion_wrapper{
-    margin-top: 50px;
-  }
+  
   .main_home_background {
     height: 250px;
+  }
+  .header_bar_description_inner_div1 img{
+    width: 70px;
+    height: 70px;
+  }
+  .header_bar_description_inner_div1 h3{
+    font-size: 14px;
+  }
+  .social_icons img{
+    width: 30px;
+    height: 30px;
+  }
+  .google_icon img{
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .card_header_top{
+    height: auto !important;
+  }
+  .header_bottom_description{
+    background: darkgray
+  }
+  .header_bottom_description_news p{
+    font-size: 12px;
+  }
+  .header_bottom_description_news h3{
+    font-size: 15px;
+  }
+  .header_bottom_description_recent p{
+    font-size: 12px;
+  }
+  .header_bottom_description_recent h3{
+    font-size: 15px;
+  }
+  .header_bottom_description_news{
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .header_bottom_description_recent{
+    height: auto;
+    padding-bottom: 20px;
   }
 }

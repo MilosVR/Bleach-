@@ -223,3 +223,92 @@ header .logo img {
       font-weight: bold;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .headerOnScroll {
+    height: 85px;
+  }
+  .headerOnScroll .logo {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    transition: 1s;
+  }
+  .headerOnScroll .logo img {
+    width: 140px;
+  }
+  .hamburgerMenu {
+    display: flex !important;
+    position: absolute;
+    top: 20px;
+    right: -85px;
+    background: url(/assets/habmurger.png) center center no-repeat;
+    background-size: 60% 40%;
+    cursor: pointer;
+  }
+  .mask_card_header{
+    height: 50px;
+  }
+  .hamburger_menu_wrapper{
+    top:60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerOnScroll {
+    height: 80px;
+  }
+  .headerOnScroll .logo {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    transition: 1s;
+  }
+  .headerOnScroll .logo img {
+    width: 135px;
+  }
+  .hamburgerMenu {
+    display: flex !important;
+    position: absolute;
+    top: 15px;
+    right: -85px;
+    background: url(/assets/habmurger.png) center center no-repeat;
+    background-size: 60% 40%;
+    cursor: pointer;
+  }
+  .mask_card_header{
+    height: 50px;
+  }
+  .hamburger_menu_wrapper{
+    top:60px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .headerOnScroll {
+    height: 70px;
+  }
+  .headerOnScroll .logo {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    transition: 1s;
+  }
+  .headerOnScroll .logo img {
+    width: 120px;
+  }
+  .hamburgerMenu {
+    display: flex !important;
+    position: absolute;
+    top: 15px;
+    right: -85px;
+    background: url(/assets/habmurger.png) center center no-repeat;
+    background-size: 50% 30%;
+    cursor: pointer;
+  }
+  .mask_card_header{
+    height: 50px;
+  }
+  .hamburger_menu_wrapper{
+    top:60px;
+  }
+}

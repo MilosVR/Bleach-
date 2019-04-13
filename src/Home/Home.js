@@ -240,19 +240,19 @@ class Home extends Component {
 
       <div style={{display:"flex", }}>
       <div className='social_icon_image'>
-      <img src='/assets/facebook1.png' /> 
+      <img src='/assets/facebook1.png' alt=''/> 
       </div>
       
       <div className='social_icon_image'>
-      <img src='/assets/youtube1.png' /> 
+      <img src='/assets/youtube1.png'  alt=''/> 
       </div>
 
       <div className='social_icon_image'>
-      <img src='/assets/twiter1.png' /> 
+      <img src='/assets/twiter1.png'  alt=''/> 
       </div>
 
-      <div className='social_icon_image'>
-      <img src='/assets/google.png' style={{width:'40px',height:'40px'}}/> 
+      <div className='social_icon_image google_icon'>
+      <img src='/assets/google.png' style={{width:'40px',height:'40px'}} alt=''/> 
       </div>
       </div>
       
@@ -284,19 +284,6 @@ class Home extends Component {
       </p>
       </div>
       </div>
-
-      {/* <div className='card_promotion_wrapper'>
-         <div className='card_promotion_image_1' alt=''></div>
-         <div style={{width:"15%", height:"70%", position:"relative", display:"flex"}} className='konLogo'>
-           <img alt='' src='/assets/kon.png' style={{position:'absolute', top:'0',left:'0', width:"100%",height:"100%"}}/>
-          <div>
-            <span style={{position:'absolute', left:"-8px", top:"-10px",zIndex:'2',color:'black',fontSize:'18px', fontWeight:'bold'}}>Scroll<br/> down</span>
-            <img alt='' src='/assets/cloudConversation.png' 
-                 style={{width:"60%", height:"60%", position:'absolute', top:'-50px', left:"-60px"}}/> 
-            </div> 
-          </div>
-        <div className='card_promotion_image_2'></div>   
-      </div> */}
 
       </div>  
 
