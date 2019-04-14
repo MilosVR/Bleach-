@@ -110,6 +110,9 @@
     flex-direction: column;
     margin: 20px;
   }
+  .footer_top_image_div img{
+    width: 60px;
+  }
   .footer_top_image_div {
     width: 80px;
     height: 100px;

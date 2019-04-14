@@ -1,7 +1,28 @@
 .favorite_main_div{
     width: 100%;
+    height: 100vh;
     background: dodgerblue;
 }
 .favorite_mask{
     height: 100px;
+}
+.favorite_list_title{
+    width: 1280px;
+    height: 50px;
+    line-height: 50px;
+    background: black;
+    color: white;
+    margin: 50px auto;
+    font-size: 24px;
+    font-weight: bold;
+}
+.empty_favorite_list{
+    width: 1280px;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    color: black;
 }

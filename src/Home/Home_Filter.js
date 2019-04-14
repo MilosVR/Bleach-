@@ -56,7 +56,7 @@ class Home_Filter extends Component {
             <span>Filter by</span>
 
             <div  className='first_card_filter'> 
-            <Select  placeholder='Rarity' style={{width:'250px', fontSize:'16px'}} 
+            <Select  placeholder='Rarity' style={{width:'250px', fontSize:'16px',color:"black"}} 
             onChange={this.props.onChangeSelect}
             fluid
             selection

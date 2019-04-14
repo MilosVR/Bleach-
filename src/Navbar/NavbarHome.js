@@ -45,11 +45,8 @@ class NavbarHome extends Component {
             <div className='logo'><img src='/assets/logo.png' alt=''/></div>
             <nav className='nav_header'>
 
-                <div className='hamburgerMenu' onClick={this.toggleMenu}
-                style={{display: this.state.scrolling ? 'block' : 'none'}}></div>
+      {this.state.scrolling && <div className='hamburgerMenu' onClick={this.toggleMenu}></div>}
 
-                
-                
                 <ul className='navigation_ul_tag'>
                    <Link to='/'><li><span className='navigation_a_tag active' >Home</span></li> </Link>
                    <Link to='/gacha'><li><span className='navigation_a_tag'>Gacha</span></li></Link>

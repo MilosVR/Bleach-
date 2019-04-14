@@ -68,10 +68,8 @@ header .logo img {
   color: white;
   padding: 10px;
 }
-.nav_header ul li button:hover {
-  color: white;
-  background: black;
-  font-weight: bold;
+.nav_header ul li span:hover {
+  border-bottom: 2px solid white;
 }
 .nav_header ul li span.active {
   color: crimson;
@@ -114,7 +112,6 @@ header .logo img {
 .navigation_a_tag:hover {
   color: crimson;
 }
-
 /************* CSS STYLING NAVBAR ************/
 .navbar_wrapper {
   position: fixed;

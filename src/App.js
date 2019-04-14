@@ -6,6 +6,7 @@ import CharactersDetails from './Characters/CharactersDetails';
 import Favorite from './Favorite/Favorite';
 import Gacha from './Gacha/Gacha';
 import Pvp from './PVP/Pvp'
+import 'semantic-ui-css/semantic.min.css'
 
 class App extends Component {
   render() {
